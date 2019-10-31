@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 
 class StringValue {
 private:
@@ -7,7 +6,7 @@ private:
     size_t size_;
     char * data_;
 public:
-    StringValue(char * s);
+    StringValue(char const * s);
     StringValue& copy();
     ~StringValue();
 };
